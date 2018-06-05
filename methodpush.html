@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>push</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<button value="button" onclick="myFunction()">Click</button>
+	<script>
+		var people = ["Nhung", "Thuy", "Ngoc", "Luan"];
+		document.getElementById("demo").innerHTML = people;
+		function myFunction(){
+			people.push("Minh");
+			document.getElementById("demo").innerHTML=people;
+		}
+	</script>
+</body>
+</html>

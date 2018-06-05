@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Touppercase</title>
+</head>
+<body>
+	<p id="demo">Nhung Nhung</p>
+	<button  onclick="myFunction()">Click me</button>
+	<script>
+		function myFunction(){
+			var text = document.getElementById("demo").innerHTML;
+			document.getElementById("demo").innerHTML = text.toUpperCase(); //toLowerCase
+		}
+	</script>
+</body>
+</html>

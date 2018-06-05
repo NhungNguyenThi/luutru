@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>conditional</title>
+</head>
+<body>
+	<input id="age" value="18" />
+	<button onclick="myFunction()">Click</button>
+
+	<p id="demo"></p>
+	
+	<script>
+		function myFunction(){
+			var age, voteable;
+			age = document.getElementById("age").value;
+			if(age < 18){
+				voteable="Too young";
+			}
+			else{
+				voteable="Old enough";
+			}
+			document.getElementById("demo").innerHTML = voteable;
+		}
+	</script>
+</body>
+</html>

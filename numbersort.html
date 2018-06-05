@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>numbersort</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<button value="button" onclick="myFunction()">Click</button>
+	<script>
+		var number=[5, 10, 1, 20, 7];
+		document.getElementById("demo").innerHTML = number;
+		function myFunction(){
+			number.sort(function(a, b){return a-b});
+			//number.sort(function(a,b){return 0.5 - Math.random()});
+			document.getElementById("demo").innerHTML = number;
+		}
+	</script>
+</body>
+</html>

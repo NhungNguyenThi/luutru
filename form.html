@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validator</title>
+	<link rel="stylesheet" type="text/css" href="form.css" />
+	<script src="nhung.js"></script>
+
+</head>
+<body>
+	<div id="fmat">
+	<h2 style="color: blue;">Form Validation</h2>
+		<form  name="myForm" onsubmit="nhung()" method="get" action="print()">
+
+
+			<table cellspacing="5" cellpadding="3">
+				<tr >
+					<td class="name" align="left">Name</td>
+					<td class="test"><input class="text" type="text" name="name" id="name" style="font-size: 15px;"></td>
+				</tr>
+				
+				<tr>
+					<td class="email" align="left">Email</td>
+					<td class="test"><input class="text" type="text" name="email" id="email" style="font-size: 15px;"></td>
+				</tr>
+				<tr>
+					<td class="phone" align="left">Phone</td>
+					<td><input class="text" type="text" name="phone" id="phone" style="font-size: 15px;"></td>
+				</tr>
+				<!-- <tr>
+					<td class="address" align="left">Address</td>
+					<td><input type="text" name="address" style="font-size: 15px;"></td>
+				</tr> -->
+				<tr>
+					<td class="username" align="left">Username</td>
+					<td><input class="text" type="text" name="username" id="username" style="font-size: 15px;"></td>
+				</tr>
+				<tr>
+					<td class="password" align="left">Password</td>
+					<td><input class="text" type="password" name="password" id="password" style="font-size: 15px;"></td>
+				</tr>
+				<tr>
+					<td class="confirm_pass" align="left">Password again</td>
+					<td><input class="text" type="password" name="confirm_pass" id="password" style="font-size: 15px;"></td>
+				</tr>
+				<tr>
+					<td class="sub" align="center"></td>
+					<td><input name="action" type="submit" id="submit" value="Submit"></td>
+					<td><input name="Reset" type="reset" value="Reset" onclick="set()"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>
